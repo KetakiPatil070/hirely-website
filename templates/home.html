@@ -1,0 +1,72 @@
+<DOCTYPE! html>
+    <html>
+        <head>
+            <title>Hirely</title>
+          <style>
+            h1{
+              font-size: 80px;
+              font-family: Roboto;
+              text-align: center;
+              color: rgb(0,0,0)
+            }
+            #banner{
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+              width: 100%;
+              object-fit: cover;
+              height: 660px;
+            }
+            h2{
+              font-size: 50px;
+              font-family: Roboto;
+              text-align: center;
+              color: rgb(100,100,100)
+            }
+            h5{
+              font-size: 15px;
+              font-family: Roboto;
+              text-align: center;
+              color: rgb(100,100,100);
+            }
+            p {
+            font-size: 20px;
+            font-family: Roboto, sans-serif;
+            text-align: center;
+            color: rgb(50, 50, 50);
+            }
+            button {
+              display: block;
+              margin: 20px auto;
+              padding: 10px 20px;
+              font-size: 18px;
+              border-radius: 8px;
+              border: none;
+              background-color: #007bff;
+              color: white;
+              cursor: pointer;
+            }
+          </style>
+            
+        </head>
+        <body>
+          
+            <h1> Hirely </h1>
+            <img id = "banner" src="https://def02c63-a178-433e-99ac-b329812b9a9a-00-1lavquwh1zkkw.pike.replit.dev:5000/static/Photo.jpg">
+
+              <h2>  About Us </h2>
+              <p>  
+                Hirely is a smart and reliable platform designed to simplify hiring and job searching. We connect talented professionals with the right opportunities while helping businesses find the best candidates with ease. With a focus on speed, transparency, and efficiency, Hirely makes the recruitment process seamless for both employers and job seekers.
+              </p>
+            <h2>  Open Positions </h2>
+          <div> 
+            {% for job in jobs %}
+             {% include "jobitem.html" %}
+            {% endfor %}
+          </div>
+            <button>  Contact Us</button>
+            <h5>  Copyright 2025, Hirely</h5>
+          
+        </body>
+    </html>
+</DOCTYPE>
