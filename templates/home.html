@@ -2,6 +2,9 @@
     <html>
         <head>
             <title>Hirely</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
           <style>
             h1{
               font-size: 80px;
@@ -22,12 +25,8 @@
               font-family: Roboto;
               text-align: center;
               color: rgb(100,100,100)
-            }
-            h5{
-              font-size: 15px;
-              font-family: Roboto;
-              text-align: center;
-              color: rgb(100,100,100);
+              margin-left: auto;
+              margin-right: auto;
             }
             p {
             font-size: 20px;
@@ -50,7 +49,7 @@
             
         </head>
         <body>
-          
+            {% include "nav.html" %}
             <h1> Hirely </h1>
             <img id = "banner" src="https://def02c63-a178-433e-99ac-b329812b9a9a-00-1lavquwh1zkkw.pike.replit.dev:5000/static/Photo.jpg">
 
@@ -64,9 +63,18 @@
              {% include "jobitem.html" %}
             {% endfor %}
           </div>
-            <button>  Contact Us</button>
-            <h5>  Copyright 2025, Hirely</h5>
-          
+          <div class='text-center'>
+            <a class="btn btn-outline-primary btn-sm fw-bold"
+               href="https://mail.google.com/mail/?view=cm&fs=1&to=ketakibpatil070@gmail.com&su=Question%20about%20Job%20Openings&body=My%20name:%20<your%20name%20here>%0AMy%20question:%20<your%20question>"
+               target="_blank">
+              Contact Us
+            </a>
+          </div>
+
+
+
+
+          {% include "footer.html" %}
         </body>
     </html>
 </DOCTYPE>
